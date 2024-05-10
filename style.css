@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+}
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.key {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10%;
+}
+.key.active {
+    border: 2px solid #000000;
+    color: #ecebee;
+    padding: 35px;
+    box-shadow: 0 0 7px 4px #614c92;
+}
+
+.composer {
+    width: 260px;
+    margin-top: 20px;
+}
+.composer #input {
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+.composer button {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: 2px solid #44258b;
+    border-radius: 3%;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.composer button:hover {
+    background-color: #00000033;
+    transition: 0.3s;
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #44258b;
+    padding: 5px;
+}
+.titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    color: #5d4496;
+    border-bottom: 1px solid #5d4496;
+    border-radius: 5px;
+    padding: 5px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #00040D;
+    box-sizing: border-box;
+    border: 2px solid #614c92;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 30px #614c92;
+    background:url(./src/assets/logo\ 1\ \(1\).svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 200px;
+    height: 150px;
+}
